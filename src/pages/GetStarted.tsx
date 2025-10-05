@@ -326,13 +326,9 @@ const GetStarted = () => {
                         <SelectValue placeholder="Select" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="woman">Woman</SelectItem>
                         <SelectItem value="man">Man</SelectItem>
-                        <SelectItem value="non-binary">Non-binary</SelectItem>
-                        <SelectItem value="genderqueer">Genderqueer</SelectItem>
-                        <SelectItem value="genderfluid">Genderfluid</SelectItem>
-                        <SelectItem value="agender">Agender</SelectItem>
-                        <SelectItem value="two-spirit">Two-Spirit</SelectItem>
+                        <SelectItem value="woman">Woman</SelectItem>
+                        <SelectItem value="non-binary">Non-Binary</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                         <SelectItem value="prefer-not-to-say">Prefer not to say</SelectItem>
                       </SelectContent>

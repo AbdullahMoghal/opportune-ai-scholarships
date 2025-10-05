@@ -52,11 +52,6 @@ const About = () => {
       icon: Users,
       title: t("comprehensiveDatabase"),
       description: t("comprehensiveDatabaseDesc")
-    },
-    {
-      icon: TrendingUp,
-      title: t("realTimeUpdates"),
-      description: t("realTimeUpdatesDesc")
     }
   ];
 
@@ -83,6 +78,37 @@ const About = () => {
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-5 duration-700 delay-200 leading-relaxed">
               {t("aboutSubtitle")}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Founders' Story Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <Badge className="mx-auto bg-primary/10 text-primary border border-primary/20">
+              Our Story
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Built by students, for students
+            </h2>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Why we started Opportune AI
+            </p>
+            <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed text-muted-foreground">
+              <p>
+                Have you ever tried searching for scholarships online? You start hopeful, thinking you’ll find a few that fit you, but ten tabs later, you’re stuck with irrelevant links, outdated deadlines, and endless forms.
+              </p>
+              <p>
+                We’ve been there too.
+              </p>
+              <p>
+                That same confusion and burnout led us to create Opportune AI, a platform built by students for students, designed to make finding scholarships simple, relevant, and worth your time.
+              </p>
+              <p className="font-semibold text-foreground">
+                We didn’t just notice the problem. We lived it.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -124,48 +150,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Problem Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-destructive">
-                {t("theProblem")}
-              </h2>
-            </div>
-            <Card className="border-destructive/30 bg-gradient-to-br from-destructive/5 to-destructive/10 shadow-2xl">
-              <CardHeader className="text-center pb-6">
-                <div className="w-16 h-16 bg-destructive/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-destructive" />
-                </div>
-                <CardTitle className="text-2xl text-destructive">
-                  {t("theProblem")}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/20">
-                  <div className="w-3 h-3 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t("problemPoint1")}
-                  </p>
-                </div>
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/20">
-                  <div className="w-3 h-3 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t("problemPoint2")}
-                  </p>
-                </div>
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-destructive/5 border border-destructive/20">
-                  <div className="w-3 h-3 bg-destructive rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t("problemPoint3")}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      {/* Problem Section removed per request */}
 
       {/* Solution Section */}
       <section className="py-20 bg-muted/30">
@@ -203,41 +188,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center">
-            <Card className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 border-primary/30 shadow-2xl">
-              <CardHeader className="pb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <Lightbulb className="w-10 h-10 text-primary" />
-                </div>
-                <CardTitle className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  {t("ourMission")}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-8">
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                  {t("missionStatement")}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Link to="/get-started">
-                    <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity text-lg h-14 px-8 shadow-lg">
-                      {t("getStarted")}
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </Button>
-                  </Link>
-                  <Link to="/">
-                    <Button variant="outline" size="lg" className="text-lg h-14 px-8 border-primary/30 hover:bg-primary/5">
-                      {t("learnMore")}
-                    </Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      {/* Mission Section removed per request */}
 
       {/* Sources Section */}
       <section className="py-16 bg-muted/30">
