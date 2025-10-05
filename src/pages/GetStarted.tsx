@@ -265,7 +265,7 @@ const GetStarted = () => {
                         <SelectValue placeholder="Select" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="lgbtq">LGBTQ+</SelectItem>
+                        <SelectItem value="lgbtq">LGBTQIA+</SelectItem>
                         <SelectItem value="straight">Straight/Heterosexual</SelectItem>
                         <SelectItem value="prefer-not-to-say">Prefer not to say</SelectItem>
                       </SelectContent>

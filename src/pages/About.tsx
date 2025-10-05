@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Users, DollarSign, Target, Lightbulb, TrendingUp } from "lucide-react";
+import { ArrowRight, Users, DollarSign, Target, Lightbulb, TrendingUp, Calendar } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -49,9 +49,9 @@ const About = () => {
       description: t("personalizedResultsDesc")
     },
     {
-      icon: Users,
-      title: t("comprehensiveDatabase"),
-      description: t("comprehensiveDatabaseDesc")
+      icon: Calendar,
+      title: t("smartDeadlineTracking"),
+      description: t("smartDeadlineTrackingDescription")
     }
   ];
 
@@ -100,7 +100,7 @@ const About = () => {
                 Have you ever tried searching for scholarships online? You start hopeful, thinking you’ll find a few that fit you, but ten tabs later, you’re stuck with irrelevant links, outdated deadlines, and endless forms.
               </p>
               <p>
-                We’ve been there too.
+                <strong>We’ve been there too.</strong>
               </p>
               <p>
                 That same confusion and burnout led us to create Opportune AI, a platform built by students for students, designed to make finding scholarships simple, relevant, and worth your time.
@@ -166,7 +166,10 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-primary/20 bg-gradient-to-br from-background to-muted/20 group">
+              <Card
+                key={index}
+                className={`hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-primary/20 bg-gradient-to-br from-background to-muted/20 group ${index === 2 ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''}`}
+              >
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">

@@ -35,10 +35,22 @@ const OmniaAssistant: React.FC<OmniaAssistantProps> = ({ className = "" }) => {
   const responses: Record<AssistantOption, string> = {
     'welcome': t("omniaWelcome"),
     'learn-website': t("omniaLearnWebsite"),
-    'find-scholarships': t("omniaFindScholarships"),
+    'find-scholarships': "Fill out your profile on the 'Get Started' page with your major, GPA, interests, and background. Our AI will then match you with relevant scholarships.",
     'understand-deadlines': t("omniaUnderstandDeadlines"),
     'essay-tips': t("omniaEssayTips"),
-    'faq': t("omniaFAQ")
+    'faq': `1. What does this site do?
+Opportune AI helps you find real scholarships that match your profile. Just share some basic info like your major, GPA, interests, and background, and our system will show scholarships that are currently open and a good fit for you.
+
+2. How do I use it?
+It’s simple: Fill out the short form with your student info.
+Click “Find Scholarships.”
+Wait a few seconds. You’ll see a list of scholarships with their deadlines, amounts, and links to apply.
+
+3. Is this site free to use?
+Yes, completely free. You don’t have to pay to search or view scholarships.
+
+4. What kind of scholarships can I find here?
+You’ll find a mix of postings that are, merit-based, need-based, major-specific, and demographic-based internships.`
   };
 
   // Guided options with icons
@@ -146,20 +158,12 @@ const OmniaAssistant: React.FC<OmniaAssistantProps> = ({ className = "" }) => {
               </div>
               <div className="flex items-center gap-2">
                 <Button
-                  variant="ghost"
+                  variant="outline"
                   size="sm"
                   onClick={clearChat}
-                  className="h-8 w-8 p-0 text-muted-foreground hover:text-foreground"
+                  className="h-8 px-3 text-xs font-medium border-primary/20 hover:bg-primary/5"
                 >
-                  <X className="w-4 h-4" />
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={toggleAssistant}
-                  className="h-8 w-8 p-0 text-muted-foreground hover:text-foreground"
-                >
-                  <X className="w-4 h-4" />
+                  Clear Chat
                 </Button>
               </div>
             </div>
